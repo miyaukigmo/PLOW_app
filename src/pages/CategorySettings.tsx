@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { EventCategory } from '../types'
 import { useToast } from '../components/ui/Toast'
-import { Plus, Palette, FloppyDisk, Trash } from '@phosphor-icons/react'
+import { Plus, FloppyDisk, Trash } from '@phosphor-icons/react'
 
 const CategorySettings: React.FC = () => {
   const { showToast } = useToast()

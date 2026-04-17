@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
-import type { School, SchoolEvent, EventCategory } from '../types'
+import type { School, SchoolEvent } from '../types'
 import { SchoolTypeBadge, CategoryBadge } from '../components/ui/Badge'
 import Modal from '../components/ui/Modal'
 import EventForm from '../components/events/EventForm'

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
-import type { School, SchoolType } from '../types'
+import type { School } from '../types'
 import { SchoolTypeBadge } from '../components/ui/Badge'
 import Modal from '../components/ui/Modal'
 import SchoolForm from '../components/schools/SchoolForm'

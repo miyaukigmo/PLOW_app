@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { supabase } from '../lib/supabase'
-import { type School, type SchoolEvent, type EventCategory } from '../types'
+import { type School, type SchoolEvent } from '../types'
 import { drawCalendar, type CalendarConfig } from '../components/calendar/CalendarEngine'
 import { useToast } from '../components/ui/Toast'
 import { useCategories } from '../hooks/useCategories'
