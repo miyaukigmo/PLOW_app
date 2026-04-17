@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-base: #161616;
+  --color-surface: #222222;
+  --color-text-primary: #E6E6E6;
+  --color-text-secondary: #888888;
+  --color-border: #333333;
+  --color-accent-global: #FFFFFF;
+  --color-accent-dashboard: #00E5FF;
+  --color-accent-schools: #FF5E00;
+  --color-accent-lots: #00FF41;
+  --font-sans: 'Zen Kaku Gothic New', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  background-color: #161616;
+  color: #E6E6E6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 共通コンポーネントのアンチパターン強制（念のためベースでも指定） */
+input, select, textarea, button {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* スクロールバーカスタマイズ（ダーク仕様） */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #161616;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
